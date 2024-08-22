@@ -62,12 +62,6 @@ public class UserAddressService
     }
 
 
-    public static String getPostcodePrefix(String postcode)
-    {
-        return PostcodeBO.of(postcode).getPostcodePrefix();
-    }
-
-
     public static String getPostcodePrefixWithoutUsingGoogleMaps(String postcode)
     {
         return PostcodeBO.of().getPostcodePrefixWithoutUsingGoogleMaps(postcode);
